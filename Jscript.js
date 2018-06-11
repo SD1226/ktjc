@@ -28,6 +28,11 @@ function writee()
 		document.getElementById("ans").innerHTML = ansStr;
 		document.getElementById("exp").innerHTML = dispStr;	
 	}	
+	else if(ansStr === "")
+	{
+		dispStr += this.innerHTML + "(";
+		document.getElementById("exp").innerHTML = dispStr;	
+	}
 	else
 	{
 		clear();
