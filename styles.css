@@ -1,0 +1,97 @@
+@font-face
+{
+	font-family:'calculator';
+	src:url('fonts/Calculator.woff'),
+	    url('fonts/Calculator.ttf');
+}
+@font-face
+{
+	font-family:'cambria';
+	src:url('fonts/Cambria.woff'),
+	    url('fonts/Cambria.ttf');
+}
+html
+{
+height:100%;
+}
+body
+{
+	height:auto;
+	margin:0px;
+	display:block;
+	background-color:rgb(100,95,125);
+}
+#display
+{
+	height:30vh;
+	width:96vw;
+	border:0.3vh solid black;
+	border-radius:1vh;
+	margin:auto;
+	margin-top:2vh;
+	background-color:white;
+	font-family:calculator;
+}
+#exp
+{
+	height:60%;
+	width:100%;
+	box-sizing:border-box;
+	font-size:8vh;
+	overflow-wrap:break-word;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+#ans
+{
+	height:40%;
+	width:100%;
+	border-top:2px dashed grey;
+	box-sizing:border-box;
+	font-size:10vh;
+	overflow-wrap:break-word;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+#keypad
+{
+	height:64vh;
+	width:96vw;
+	border:0.6vh inset white;
+	border-radius:2vh;
+	margin:auto;
+	margin-top:1vh;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:space-evenly;
+	align-content:space-around;
+
+}
+.key
+{
+	height:9.5vh;	
+  	width:19vw;
+	box-sizing:border-box;
+	border:1vh outset grey;
+	border-radius:2vh;
+	font-size:5vw;
+	font-family:cambria;
+}
+.key:active
+{
+	border-style:inset;
+}
+@media only screen and (min-width:600px)
+{
+	#keypad
+	{
+		flex-direction:column;
+	}
+	.key
+	{
+		width:13vw;
+		height:12vh;
+		font-size:3.5vw;
+	}
+}
